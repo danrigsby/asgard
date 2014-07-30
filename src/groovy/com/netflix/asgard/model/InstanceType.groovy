@@ -18,6 +18,9 @@ package com.netflix.asgard.model
 enum InstanceType {
 
     T1Micro("t1.micro"),
+    T2Micro("t2.micro"),
+    T2Small("t2.small"),
+    T2Medium("t2.medium"),
     M1Small("m1.small"),
     M1Medium("m1.medium"),
     M1Large("m1.large"),

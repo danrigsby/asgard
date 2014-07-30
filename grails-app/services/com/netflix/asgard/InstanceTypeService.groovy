@@ -166,6 +166,16 @@ class InstanceTypeService implements CacheInitializer {
                         arch: three2OrSix4, vCpu: '1', ecu: '2', mem: '3.75', storage: '1 x 410', ebsOptim: '-',
                         netPerf: 'Moderate'),
 
+                new HardwareProfile(instanceType: 't2.micro', family: 'Micro instances', group: 'Micro', size: 'Micro',
+                        arch: three2OrSix4, vCpu: '1', ecu: 'Variable', mem: '1', storage: 'EBS only',
+                        ebsOptim: '-', netPerf: 'Low'),
+                new HardwareProfile(instanceType: 't2.small', family: gen, group: 'Standard', size: 'Small',
+                        arch: three2OrSix4, vCpu: '1', ecu: '1', mem: '2', storage: 'EBS only', ebsOptim: '-',
+                        netPerf: 'Low'),
+                new HardwareProfile(instanceType: 't2.medium', family: gen, group: 'Standard', size: 'Medium',
+                        arch: three2OrSix4, vCpu: '2', ecu: '2', mem: '4', storage: 'EBS only', ebsOptim: '-',
+                        netPerf: 'Low'),
+
                 new HardwareProfile(instanceType: 'm1.large', family: gen, group: 'Standard', size: 'Large', arch: six4,
                         vCpu: '2', ecu: '4', mem: '7.5', storage: '2 x 420', ebsOptim: 'Yes', netPerf: 'Moderate'),
                 new HardwareProfile(instanceType: 'm1.xlarge', family: gen, group: 'Standard', size: xl, arch: six4,

@@ -27,6 +27,19 @@ class InstanceTypeSpec extends Specification {
         instanceTypes.size() >= 28
     }
 
+    def 'should work with new instance types of T2* '(String a, String b) {
+        InstanceType type = InstanceType.fromValue(a)
+
+        expect:
+        type.toString() == b
+
+        where:
+        a | b
+        't2.micro'  | 't2.micro'
+        't2.small' | 't2.small'
+        't2.medium' | 't2.medium'
+    }
+
     def 'should work with new instance types of R3* '(String a, String b) {
         InstanceType type = InstanceType.fromValue(a)
 
